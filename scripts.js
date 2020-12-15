@@ -5,7 +5,6 @@
 function clickinicio() {
     inicio = document.querySelector('#inicio')
     videos = document.querySelector('#videos')
-    login = document.querySelector('#login')
 
     videos.style = "display:none; transition:500ms";
 
@@ -15,25 +14,8 @@ function clickinicio() {
 function clickvideos() {
     inicio = document.querySelector('#inicio')
     videos = document.querySelector('#videos')
-    login = document.querySelector('#login')
 
     inicio.style = "display:none; transition:500ms";
-    login.style = "display:none; transition:500ms";
 
     videos.style = "display:flex; transition:500ms";
 }
-
-function clickentrar() {
-    inicio = document.querySelector('#inicio')
-    videos = document.querySelector('#videos')
-    login = document.querySelector('#login')
-
-    inicio.style = "display:none; transition:500ms";
-    videos.style = "display:none; transition:500ms";
-
-    login.style = "display:flex; transition:500ms";
-}
-
-// Não arrastar o logo
-
-document.getElementById('#logo').ondragstart = function() { return false; };
