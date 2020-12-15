@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(151, 77, 180);
+    /* box-shadow: rgba(0, 0, 0, 0.356) 0px 0px 50px 0px; */
+}
+
+.unselect, header a, #card {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    margin-top: 1%;
+    padding: 5px;
+    border: 2px solid rgb(166, 120, 184);
+    min-width: clamp(40%, 60%, 80%);
+    width: clamp(40%, 60%, 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(215, 212, 255);
+    border-radius: 15px 15px 0 0;
+    border-bottom: none;
+    animation: fadein 1s forwards;
+}
+
+header a {
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 200ms;
+    color: rgb(151, 77, 180);
+    animation: fadein 1s forwards;
+    user-select: none;
+}
+
+header a:hover {
+    background-color: rgb(235, 234, 255);
+    border-radius: 5px;
+    transition: 300ms;
+    letter-spacing: 2px;
+}
+
+header a + a {
+    margin-left: 16px;
+}
+
+#entrar:hover {
+    background-color: rgb(189, 255, 205);
+}
+
+/* SECTIONS */
+
+#inicio {
+    padding: 5px;
+    border: 2px solid rgb(166, 120, 184);
+    width: clamp(40%, 60%, 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(215, 212, 255);
+    border-radius: 0 0 15px 15px;
+    border-bottom: none;
+    animation: fadein 1s forwards;
+}
+
+#inicio h1 {
+    animation: fadein 1s forwards;
+    padding: 10px;
+    font-weight: 400;
+}
+
+#inicio p {
+    padding: 10px;
+}
+
+#inicio a {
+    text-decoration: none;
+    transition: 200ms;
+    color: rgb(151, 77, 180);
+    animation: fadein 1s forwards;
+}
+
+#inicio a:hover {
+    transition: 300ms;
+    letter-spacing: 1px;
+}
+
+/* INÍCIO DA ABA VÍDEOS */
+
+#videos {
+    padding: 5px;
+    border: 2px solid rgb(166, 120, 184);
+    width: clamp(40%, 60%, 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(215, 212, 255);
+    border-radius: 0 0 15px 15px;
+    border-bottom: none;
+    transition: 500ms;
+    flex-direction: column;
+    animation: fadein 1s forwards;
+}
+
+#videos h1 {
+    animation: fadein 1s forwards;
+    padding: 10px;
+    font-weight: 400;
+}
+
+#videos img {
+    width: 80%;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+#videos img:hover {
+    transition: 350ms;
+    width: 85%;
+}
+
+#videos p {
+    padding: 10px;
+}
+
+#cards, #card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card, #inicio {
+    flex-direction: column;
+}
+
+/* INICIO DA ABA LOGIN */
+
+#login {
+    padding: 5px;
+    border: 2px solid rgb(166, 120, 184);
+    width: clamp(40%, 60%, 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(215, 212, 255);
+    border-radius: 0 0 15px 15px;
+    border-bottom: none;
+    animation: fadein 1s forwards;
+}
+
+#login h1 {
+    animation: fadein 1s forwards;
+    padding: 10px;
+    font-weight: 400;
+}
+
+#login p {
+    padding: 10px;
+}
+
+#login a {
+    text-decoration: none;
+    transition: 200ms;
+    color: rgb(151, 77, 180);
+    animation: fadein 1s forwards;
+}
+
+#login a:hover {
+    transition: 300ms;
+    letter-spacing: 1px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0%;
+        display: flex;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeleft {
+    from {
+        opacity: 0%;
+        display: flex;
+    }
+    to {
+        opacity: 100%;
+    }
+}
